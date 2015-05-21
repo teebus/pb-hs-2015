@@ -111,7 +111,8 @@ var bailey = new TimelineMax()
 
 .to('#colour-explosion-bailey', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
 .to('#bailey-text', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.from('#bailey-text', 1, {left:"200px"}, "=-1");
+.from('#bailey-text', 1, {left:"200px"}, "=-1")
+.to('section#bailey .shop-button', 2, {opacity:1}, "=+0.5");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger3'})
@@ -124,7 +125,8 @@ var molly = new TimelineMax()
 
 .to('#colour-explosion-molly', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
 .to('#molly-text', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.from('#molly-text', 1, {right:"200px"}, "=-1");
+.from('#molly-text', 1, {right:"200px"}, "=-1")
+.to('section#molly .shop-button', 2, {opacity:1}, "=+0.5");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger4'})
@@ -135,11 +137,47 @@ var lilly = new TimelineMax()
 
 .to('#colour-explosion-lilly', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
 .to('#lilly-text', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.from('#lilly-text', 1, {left:"200px"}, "=-1");
+.from('#lilly-text', 1, {left:"200px"}, "=-1")
+.to('section#lilly .shop-button', 2, {opacity:1}, "=+0.5");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger5'})
 .setTween(lilly)
 .addTo(controller);
+
+
+
+// https://developers.google.com/youtube/iframe_api_reference
+
+// global variable for the player
+var player;
+
+// this function gets called when API is ready to use
+function onYouTubePlayerAPIReady() {
+  // create the global player from the specific iframe (#video)
+  player = new YT.Player('ytplayer', {
+    events: {
+      // call this function when player is ready to use
+      'onReady': onPlayerReady
+    }
+  });
+}
+
+
+      $(window).scroll(function() {
+        function onPlayerReady() {
+        $("iframe").each( function() {
+            if( $(window).scrollTop() > $(this).offset().top - 200 ) {
+                player.playVideo();
+            } else {
+                player.stopVideo();
+            }
+        }); 
+            }
+    });
+
+
+
+
 
 });

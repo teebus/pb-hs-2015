@@ -122,6 +122,11 @@ p {
     font-weight: 300;
 }
 
+img   {
+    max-width:100% !important;
+    height:auto;
+}
+
 
 .clear {
     clear:both;
@@ -129,6 +134,12 @@ p {
 
 
 section#main-title {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     height: 100vh;
 }
 
@@ -162,8 +173,18 @@ nav li a {
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
-
   }
+
+
+  nav li a:hover {
+  color: #fff;
+  border-bottom: 2px solid white;
+  }
+
+
+section a {
+    text-decoration: none;
+}
 
   .fixed {
     position: fixed; 
@@ -183,11 +204,9 @@ nav li a {
 
 
 #logo {
-    position: absolute;
+    min-width: 300px;
     width:26%;
-    left:37%;
-    top: 25%;
-    margin: 0 auto;
+    margin: -300px auto 0;
     opacity: 0;
 }
 
@@ -212,7 +231,7 @@ nav li a {
   position: absolute;
   width: 20%;
   top: 75%;
-  left: 48%;
+  left: 40%;
   opacity: 0;
   text-align: center;
   display: inline-block;
@@ -221,8 +240,7 @@ nav li a {
 
 .shop-button {
   font-family: 'Open Sans', sans-serif;
-  position: absolute;
-
+  position: relative;
   padding: 10px 20px;
   width: 100px;
   color: #fff;
@@ -230,16 +248,30 @@ nav li a {
   text-transform: uppercase;
   background: #222;
   opacity:0;
+    margin-top: 5%;
   }
 
 
+.text-container {
+      display: inline-block;
+      vertical-align: middle;
+}
+
+
+/* Pandora */
+
+
 #colour-explosion-pandora {
-    display: inline-block;
-    margin-left: 7%;
-    width: 50%;
-    height: auto;
-    vertical-align: middle;
-    opacity: 0;
+      display: inline-block;
+      vertical-align: middle;
+      width: 50%;
+      margin-left:5%;
+      height: auto;
+      opacity: 0;
+}
+
+section#pandora .text-container {
+      width: 35%;
 }
 
 
@@ -247,16 +279,14 @@ nav li a {
     position: relative;
     display: inline-block;
     margin-top: -10%;
-    width:25%;
     vertical-align: middle;
     opacity: 0;
 }
 
 
-section#pandora .shop-button {
-  top: 55%;
-  left: 57.3%;
-  }
+
+
+/* Hattie */
 
 
 #colour-explosion-hattie {
@@ -267,21 +297,22 @@ section#pandora .shop-button {
     opacity: 0;
 }
 
+section#hattie .text-container {
+      margin-left: 15%;
+      width: 30%;
+}
+
 #hattie-text {
     position: relative;
     display: inline-block;
-    width:25%;
     margin-top: -20%;
-    margin-left:20%;
     vertical-align: middle;
     opacity: 0;
 
 }
 
-section#hattie .shop-button {
-  top: 48%;
-  left: 20%;
-  }
+
+/* Bailey */
 
 
 #colour-explosion-bailey {
@@ -293,62 +324,102 @@ section#hattie .shop-button {
     opacity: 0;
 }
 
+section#bailey .text-container {
+      width: 30%;
+      margin-left: 5%; 
+}
+
 #bailey-text {
     position: relative;
     display: inline-block;
     margin-top: -10%;
-    margin-left:5%;
-    width:25%;
     vertical-align: middle;
     opacity: 0;
 }
 
+
+  /* Molly */
+
 #colour-explosion-molly {
     display: inline-block;
+    margin-left: 5%;
     width: 50%;
     height: auto;
     vertical-align: middle;
     opacity: 0;
+}
+
+section#molly .text-container {
+      margin-left: 10%;
+      margin-top: -10%;
+      width: 30%;
 }
 
 #molly-text {
     position: relative;
     display: inline-block;
-    width:25%;
-    margin-top: -20%;
-    margin-left:20%;
     vertical-align: middle;
     opacity: 0;
 
 }
 
+/* Lilly */
+
 #colour-explosion-lilly {
     display: inline-block;
-    margin-left: 7%;
+    margin-top:-10%;
+    margin-left: 3%;
     width: 50%;
     height: auto;
     vertical-align: middle;
     opacity: 0;
 }
 
+section#lilly .text-container {
+      width: 35%;
+      margin-left: 5%;
+}
+
 #lilly-text {
     position: relative;
     display: inline-block;
-    margin-top: 10%;
-    margin-left:5%;
-    width:25%;
     vertical-align: middle;
     opacity: 0;
 }
 
 
+/* Video */
 
 
-#main-title img, #colour-explosion-pandora img, #colour-explosion-hattie img, #colour-explosion-bailey img, #colour-explosion-molly img, #colour-explosion-lilly img   {
-    max-width:100% !important;
-    height:auto;
-    display:block;
+section#video {
+  height: 100vh;
 }
+
+
+.video {
+  margin: 200px auto 0;
+  border: 1px solid #000;
+  width: 50%;
+}
+
+#videowrapper {
+    float: none;
+    clear: both;
+    width: 100%;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    height: 0;
+}
+#videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 
 /*
 
