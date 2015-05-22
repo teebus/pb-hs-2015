@@ -274,6 +274,18 @@ section a {
       vertical-align: middle;
 }
 
+.heading img{
+  float: left;
+  width: 22px;
+}
+
+.heading h1 {
+  position: relative;
+  top: -10px;
+  left:20px;
+}
+
+
 
 /* Pandora */
 
