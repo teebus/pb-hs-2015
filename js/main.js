@@ -86,7 +86,6 @@ var pandora = new TimelineMax()
 
 .to('#colour-explosion-pandora', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
 .to('#pandora-text', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.from('#pandora-text', 1, {left:"100px"}, "=-1")
 .to('section#pandora .shop-button', 2, {opacity:1}, "=+0.5");
 
 
