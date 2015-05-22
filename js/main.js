@@ -70,7 +70,7 @@ var mainTitle = new TimelineMax()
 .to('#logo', 3, {autoAlpha:1, delay:1})
 .from('#logo', 2, {ease: Circ.easeOut, y: -100,},"-=3")
 .to('#title', 2, {opacity:1}, "-=2.0")
-.from('#title', 2, {ease: Circ.easeOut, y: 40,},"-=2")
+.from('#title', 2, {ease: Circ.easeOut, y: 100,},"-=2")
 .to ('#scroll', 2, {opacity:1}, "-=2");
 
 
