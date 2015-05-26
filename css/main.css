@@ -228,8 +228,8 @@ nav li a {
 
 
   nav li a:hover {
-  color: #fff;
-  border-bottom: 2px solid white;
+  color: #f95951;
+  // border-bottom: 2px solid #f95951;
   }
 
 
@@ -245,7 +245,8 @@ section a {
 }
 
 .active {
-    border-bottom: 2px solid white;
+    color: #f95951;
+    // border-bottom: 2px solid #f95951;
 }
 
 
@@ -279,6 +280,7 @@ section a {
 
 .lightning {
     display: flex;
+    display: -webkit-flex;
     opacity: 0;
 }
 
