@@ -277,9 +277,22 @@ section a {
       text-align: center;
 }
 
-.heading img{
+.lightning {
+    display: flex;
+    opacity: 0;
+}
+
+.bolt {
   margin: 0 auto;
-  width: 22px;
+  width: 18px;
+}
+
+.bolt img{
+  margin: 0 auto;
+}
+
+.heading {
+  opacity: 0;
 }
 
 .heading h1 {
@@ -287,6 +300,18 @@ section a {
   text-transform: uppercase;
   font-size: 2.5rem;
   letter-spacing: -0.04rem;
+}
+
+.lightning::before {margin-right: 1.3em}
+.lightning::after {margin-left: 1.3em}
+
+.lightning::before,
+.lightning::after {
+  display: block; /* IE fix */
+  content: "";
+  flex:1;
+  align-self: center;
+  border-bottom: 1px solid black;
 }
 
 
@@ -313,9 +338,11 @@ section#pandora .text-container {
     display: inline-block;
     margin-top: -10%;
     vertical-align: middle;
-    opacity: 0;
 }
 
+#pandora-text p {
+  opacity: 0;
+}
 
 
 
@@ -340,8 +367,10 @@ section#hattie .text-container {
     display: inline-block;
     margin-top: -20%;
     vertical-align: middle;
-    opacity: 0;
+}
 
+#hattie-text p {
+  opacity: 0;
 }
 
 
@@ -367,7 +396,10 @@ section#bailey .text-container {
     display: inline-block;
     margin-top: -10%;
     vertical-align: middle;
-    opacity: 0;
+}
+
+#bailey-text p {
+  opacity: 0;
 }
 
 
@@ -392,8 +424,10 @@ section#molly .text-container {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    opacity: 0;
+}
 
+#molly-text p {
+  opacity: 0;
 }
 
 /* Lilly */
@@ -417,7 +451,10 @@ section#lilly .text-container {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    opacity: 0;
+}
+
+#lilly-text p {
+  opacity: 0;
 }
 
 
