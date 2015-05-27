@@ -85,10 +85,11 @@ var arrow = new TimelineMax({repeat:5, repeatDelay:3, yoyo:true})
 var pandora = new TimelineMax()
 
 .to('#colour-explosion-pandora', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
-.to('#pandora-text .heading', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.to('#pandora-text .lightning', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('#pandora-text p', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('section#pandora .shop-button', 2, {opacity:1});
+.from('#colour-explosion-pandora', 1, {x: -200}, "=-1")
+.to('#pandora-text .heading', 1, {opacity:1, ease:Power1.easeIn}, "=-1")
+.to('#pandora-text .lightning', 1, {opacity:1, ease:Power1.easeIn}, "=-0.7")
+.to('#pandora-text p', 1, {opacity:1, ease:Power1.easeIn}, "=-0.6")
+.to('section#pandora .shop-button', 1, {opacity:1, ease:Power1.easeIn}, "=-0.2");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger1'})
@@ -99,10 +100,11 @@ var scene = new ScrollMagic.Scene({triggerElement: '#trigger1'})
 var hattie = new TimelineMax()
 
 .to('#colour-explosion-hattie', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
-.to('#hattie-text .heading', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.to('#hattie-text .lightning', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('#hattie-text p', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('section#hattie .shop-button', 2, {opacity:1}, "=+0.5");
+.from('#colour-explosion-hattie', 1, {x: 100}, "=-1")
+.to('#hattie-text .heading', 1, {opacity:1, ease:Power1.easeIn}, "=-1")
+.to('#hattie-text .lightning', 1, {opacity:1, ease:Power1.easeIn}, "=-0.7")
+.to('#hattie-text p', 1, {opacity:1, ease:Power1.easeIn}, "=-0.6")
+.to('section#hattie .shop-button', 1, {opacity:1, ease:Power1.easeIn}, "=-0.2");
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger2', offset: 0})
 .setTween(hattie)
@@ -112,10 +114,11 @@ var scene = new ScrollMagic.Scene({triggerElement: '#trigger2', offset: 0})
 var bailey = new TimelineMax()
 
 .to('#colour-explosion-bailey', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
-.to('#bailey-text .heading', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.to('#bailey-text .lightning', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('#bailey-text p', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('section#bailey .shop-button', 2, {opacity:1}, "=+0.5");
+.from('#colour-explosion-bailey', 1, {x: -200}, "=-1")
+.to('#bailey-text .heading', 1, {opacity:1, ease:Power1.easeIn}, "=-1")
+.to('#bailey-text .lightning', 1, {opacity:1, ease:Power1.easeIn}, "=-0.7")
+.to('#bailey-text p', 1, {opacity:1, ease:Power1.easeIn}, "=-0.6")
+.to('section#bailey .shop-button', 1, {opacity:1, ease:Power1.easeIn}, "=-0.2");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger3'})
@@ -127,10 +130,11 @@ var scene = new ScrollMagic.Scene({triggerElement: '#trigger3'})
 var molly = new TimelineMax()
 
 .to('#colour-explosion-molly', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
-.to('#molly-text .heading', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.to('#molly-text .lightning', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('#molly-text p', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('section#molly .shop-button', 2, {opacity:1}, "=+0.5");
+.from('#colour-explosion-molly', 1, {x: 200}, "=-1")
+.to('#molly-text .heading', 1, {opacity:1, ease:Power1.easeIn}, "=-1")
+.to('#molly-text .lightning', 1, {opacity:1, ease:Power1.easeIn}, "=-0.7")
+.to('#molly-text p', 1, {opacity:1, ease:Power1.easeIn}, "=-0.6")
+.to('section#molly .shop-button', 1, {opacity:1, ease:Power1.easeIn}, "=-0.2");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger4'})
@@ -140,10 +144,11 @@ var scene = new ScrollMagic.Scene({triggerElement: '#trigger4'})
 var lilly = new TimelineMax()
 
 .to('#colour-explosion-lilly', 2, {opacity:1, ease: Back.easeIn.config(1), y: 0})
-.to('#lilly-text .heading', 1, {opacity:1, ease:Strong.easeIn}, "=-1")
-.to('#lilly-text .lightning', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('#lilly-text p', 1, {opacity:1, ease:Strong.easeIn}, "=-0.5")
-.to('section#lilly .shop-button', 2, {opacity:1}, "=+0.5");
+.from('#colour-explosion-lilly', 1, {x: -200}, "=-1")
+.to('#lilly-text .heading', 1, {opacity:1, ease:Power1.easeIn}, "=-1")
+.to('#lilly-text .lightning', 1, {opacity:1, ease:Power1.easeIn}, "=-0.7")
+.to('#lilly-text p', 1, {opacity:1, ease:Power1.easeIn}, "=-0.6")
+.to('section#lilly .shop-button', 1, {opacity:1, ease:Power1.easeIn}, "=-0.2");
 
 
 var scene = new ScrollMagic.Scene({triggerElement: '#trigger5'})

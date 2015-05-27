@@ -281,6 +281,10 @@ section a {
 .lightning {
     display: flex;
     display: -webkit-flex;
+    max-width:350px;
+    margin-left :auto;
+    margin-right: auto;
+    margin-top: -10px;
     opacity: 0;
 }
 
@@ -312,6 +316,8 @@ section a {
   display: block; /* IE fix */
   content: "";
   flex:1;
+  -webkit-flex:1;
+  -webkit-align-self: center;
   align-self: center;
   border-bottom: 1px solid black;
 }
@@ -331,7 +337,7 @@ section a {
 }
 
 section#pandora .text-container {
-      width: 35%;
+      width: 25%;
 }
 
 
@@ -361,7 +367,8 @@ section#pandora .text-container {
 
 section#hattie .text-container {
       margin-left: 15%;
-      width: 30%;
+      margin-top: 5%;
+      width: 25%;
 }
 
 #hattie-text {
@@ -373,6 +380,10 @@ section#hattie .text-container {
 
 #hattie-text p {
   opacity: 0;
+}
+
+#colour-explosion-hattie img {
+  padding-left: 5%;
 }
 
 
@@ -389,7 +400,7 @@ section#hattie .text-container {
 }
 
 section#bailey .text-container {
-      width: 30%;
+      width: 25%;
       margin-left: 5%; 
 }
 
@@ -409,17 +420,19 @@ section#bailey .text-container {
 
 #colour-explosion-molly {
     display: inline-block;
-    margin-left: 5%;
     width: 50%;
     height: auto;
     vertical-align: middle;
     opacity: 0;
 }
 
+#colour-explosion-molly img {
+  padding-left: 10%;
+}
+
 section#molly .text-container {
-      margin-left: 10%;
-      margin-top: -10%;
-      width: 30%;
+      margin-left: 15%;
+      width: 25%;
 }
 
 #molly-text {
@@ -431,6 +444,7 @@ section#molly .text-container {
 #molly-text p {
   opacity: 0;
 }
+
 
 /* Lilly */
 
@@ -445,7 +459,7 @@ section#molly .text-container {
 }
 
 section#lilly .text-container {
-      width: 35%;
+      width: 25%;
       margin-left: 5%;
 }
 
